@@ -18,6 +18,9 @@ public class Product {
     @SerializedName("date_added")
     private String dateAdded;
 
+    @SerializedName("tax")
+    private Tax tax;
+
     @SerializedName("variants")
     private ArrayList<Variant> variantArrayList;
 
@@ -31,6 +34,10 @@ public class Product {
 
     public String getDateAdded() {
         return dateAdded;
+    }
+
+    public Tax getTax() {
+        return tax;
     }
 
     public ArrayList<Variant> getVariantArrayList() {

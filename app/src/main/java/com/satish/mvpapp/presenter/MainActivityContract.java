@@ -1,6 +1,7 @@
 package com.satish.mvpapp.presenter;
 
 import com.satish.mvpapp.model.Category;
+import com.satish.mvpapp.model.Product;
 
 import java.util.ArrayList;
 
@@ -11,16 +12,14 @@ public class MainActivityContract {
 
     public interface View {
         void showCategory(ArrayList<Category> categoryArrayList);
-        void showMostViewed(ArrayList<Category> categoryArrayList);
-        void showMostOrdered(ArrayList<Category> categoryArrayList);
-        void showMostShared(ArrayList<Category> categoryArrayList);
+        void showProductList(String filterName, ArrayList<Product> productArrayList);
+        void showMessage(String message);
+        void showError(String errorMessage);
     }
 
     public interface Actions {
         void getCategories();
-        void filterMostViewed();
-        void filterMostOrdered();
-        void filterMostShared();
+        void filterMostOrdered(int filterIndex);
     }
 
 }

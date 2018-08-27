@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/viewed"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Most Viewed Products"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ordered"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="Most OrdeRed Products"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/shared"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Most ShaRed Products"
+        app:showAsAction="never"/>
+
+</menu>

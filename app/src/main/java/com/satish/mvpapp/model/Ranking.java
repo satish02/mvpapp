@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Ranking {
 
-    @SerializedName("rankings")
+    @SerializedName("ranking")
     private String ranking;
 
     @SerializedName("products")
