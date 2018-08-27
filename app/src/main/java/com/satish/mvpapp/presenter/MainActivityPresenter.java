@@ -41,8 +41,7 @@ public class MainActivityPresenter implements MainActivityContract.Actions{
                 if(response.code() == 200) {
                     categoryResponse = response.body();
 
-                    if(categoryResponse.getCategoryArrayList() != null && categoryResponse.getCategoryArrayList() != null
-                            && categoryResponse.getCategoryArrayList().size() > 0) {
+                    if(categoryResponse.getCategoryArrayList() != null && categoryResponse.getCategoryArrayList().size() > 0) {
                         view.showCategory(categoryResponse.getCategoryArrayList());
                     }
                     else
