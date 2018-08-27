@@ -100,7 +100,7 @@ public class MainActivityPresenter implements MainActivityContract.Actions{
                 Collections.sort(productRankings, new Comparator<ProductRanking>() {
                     @Override
                     public int compare(ProductRanking ranking1, ProductRanking ranking2) {
-                        return (ranking1.getOrderCount() - ranking2.getOrderCount());
+                        return (ranking1.getViewCount() - ranking2.getViewCount());
                     }
                 });
                 return productRankings;
@@ -121,7 +121,7 @@ public class MainActivityPresenter implements MainActivityContract.Actions{
                 Collections.sort(productRankings, new Comparator<ProductRanking>() {
                     @Override
                     public int compare(ProductRanking ranking1, ProductRanking ranking2) {
-                        return (ranking1.getOrderCount() - ranking2.getOrderCount());
+                        return (ranking1.getShares() - ranking2.getShares());
                     }
                 });
                 return productRankings;
